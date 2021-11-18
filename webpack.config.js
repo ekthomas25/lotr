@@ -32,30 +32,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(jpe?g|png|gif)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[hash][ext]'
+        }
+      },
+      {
+        test:/\.html$/i,
         use: [
-          'style-loader',
-          'css-loader'
+          'html-loader'
         ]
-      }
-    ]
-  }
-};
-
-
-
-
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'lotr',
-      template: './src/index.html',
-      inject: 'body'
-    }),
-    new ESLintPlugin()
-  ],
-  module; {
-    rules: [
+      },
       {
         test: /\.css$/,
         use: [
@@ -65,7 +53,4 @@ module.exports = {
       }
     ]
   }
-;
-
-
-
+};
