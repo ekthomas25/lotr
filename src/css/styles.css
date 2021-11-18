@@ -1,0 +1,75 @@
+#lotrCharacterPics {
+  transition: 500ms;
+
+}
+#Aragorn {
+  display: none;
+}
+#Arwen {
+  display: none;
+} 
+#Boromir{
+  display: none;
+}
+#Elrond{
+  display: none;
+}
+#Eomer {
+  display: none;
+}
+
+#Eowyn {
+  display: none;
+}
+
+#Faramir {
+  display: none;
+}
+
+#Frodo {
+  display: none;
+}
+
+#Galadriel {
+  display: none;
+}
+
+#Gandalf {
+  display: none;
+}
+
+#Gimli {
+  display: none;
+}
+
+#Gollum {
+  display: none;
+}
+
+#Legolas {
+  display: none;
+}
+
+#Meriadoc {
+  display:none;
+}
+
+#Peregrin {
+  display:none;
+}
+
+#Samwise {
+  display:none;
+}
+
+#Sauron {
+  display:none;
+}
+
+#Saruman {
+  display:none;
+}
+
+#Thranduil {
+  display:none;
+}
