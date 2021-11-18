@@ -1,8 +1,8 @@
-# _Tasty Plant Pizza Co._
+# _Lord of the Rings._
 
 #### By _**Kim Brannian**_
 
-#### _A website for the Tasty Plant Pizza Co.._
+#### _A website for fans of lotr.._
 
 ## Technologies Used
 
@@ -16,33 +16,10 @@
 
 ## Description
 
-_A website that will allow users to order a basic plant-based pizza and add toppings of their choice._
+_A website...._
 
 
-## Test
-
-  * _Describe: Pizza ()
-    Test: It will create a Pizza constructor with properties for size and toppings
-    Code: function Pizza(size, toppings){
-          this.size = size;
-          this.toppings = toppings;
-          this.price = 22;
-          }
-    Expected Output: testPizza {size: 'medium', toppings: Array(1), price: 22}
-
-    Describe: Pizza.prototype.cost ()
-    Test: It will create a Pizza.prototype for the cost of pizza when size is selected
-    Code: Pizza.prototype.finalPrice = function() {
-            if (this.size === "medium") {
-            this.price += 0;
-          } else if (this.size === "large") {
-            this.price += 5;
-            }
-    Expected Output: testPizza2 {size: 'large', toppings: Array(1), price: 27}
-
-    Describe: Pizza.prototype.cost ()
-    Test: It will use the Pizza.prototype to add to the cost of pizza based on toppings choice.
-    Code: 
+  * _
           
 
 
@@ -65,5 +42,5 @@ _A website that will allow users to order a basic plant-based pizza and add topp
 
 _MIT License: https://opensource.org/licenses/MIT_
 
-Copyright (c) _2021_  Kim Brannian 
+Copyright (c) _2021_  Kim Brannian, Liz Thomas, Chase Stokes
 _
