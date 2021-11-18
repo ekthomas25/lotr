@@ -15,17 +15,67 @@ import TheOne from './theOneAPI.js';
 function getCharacter(response) {
   if (response.docs[0]) {
     //outputChar(response);
-    $('#lotrCharacter').text(`What's up ${response.docs[0].name}, of the ${response.docs[0].race} race. ${response.docs[0].birth} ${response.docs[0].realm} ${response.docs[0].hair} ${response.docs[0].height}`);
-  //  $('#lotrCharacter').text(`What's up ${response.docs[0].race}`);
+    $('#lotrCharacter').text(`What's up ${response.docs[0].name}, of the ${response.docs[0].race} race. Born in ${response.docs[0].birth}, in the ${response.docs[0].realm}. ${response.docs[0].hair} ${response.docs[0].height}`);
+    $('.showErrors').text("");
   } else {
     $('.showErrors').text(`We could not find who you seek. Ask again.`);
+  } 
+  showImg();
+}
+
+// function showImg(response) {
+//   if(response.docs[0].name === "Aragorn"){
+//     $("#Aragorn").show();
+//   }else{
+//     $('.showErrors').text("")
+//   }
+// }
+//i was wondering if this would work
+
+function showImg() {
+  let userChoice = $("#pickCharacter").val();
+  console.log(userChoice);
+  // if (response.docs[0].name === userChoice){
+  //   $("#Aragorn II Elessar").show();
+  // } else { 
+  //   return "Hi";
+  // }
+
+  if (userChoice === "Aragorn II Elessar") {
+    $("#Aragorn").show();
   }
+  if (userChoice === "Peregrin Took") {
+    $("#Peregrin").show();
+  }
+  if (userChoice === "Gollum") {
+    $("#Gollum").show();
+  }
+  if (userChoice === "Legolas") {
+    $("#Legolas").show();
+  }
+  if (userChoice === "Gandalf") {
+    $("#Gandalf").show();
+  }
+  if (userChoice === "Faramir") {
+    $("#Faramir").show();
+  }
+  if (userChoice === "Sauron") {
+    $("#Sauron").show();
+  }
+  if (userChoice === "Arwen") {
+    $("#Arwen").show();
+  }
+  if (userChoice === "Galadriel") {
+    $("#Galadriel").show();
+  }
+  $(".start-page").hide();
+  $("#").hide();
 }
 
 $(document).ready(function() {
   $('#lotr-form').submit(function(event) {
     event.preventDefault();
-    let name = $('#nameInput').val();
+    let name = $('#pickCharacter').val();
     console.log(name);
     TheOne.character(name)
       .then(function(response) {
