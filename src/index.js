@@ -14,8 +14,9 @@ import TheOne from './theOneAPI.js';
 
 function getCharacter(response) {
   if (response.docs[0]) {
+    let characterID = response.docs[0]._id;
     //outputChar(response);
-    $('#lotrCharacter').text(`What's up ${response.docs[0].name}, of the ${response.docs[0].race} race. Born in ${response.docs[0].birth}, in the ${response.docs[0].realm}. ${response.docs[0].hair} ${response.docs[0].height}`);
+    $('#lotrCharacter').text(`Greetings ${response.docs[0].name}, of the ${response.docs[0].race} race. I love your ${response.docs[0].hair} hair!`);
     $('.showErrors').text("");
   } else {
     $('.showErrors').text(`We could not find who you seek. Ask again.`);
