@@ -1,7 +1,25 @@
-#lotrCharacterPics {
-  transition: 500ms;
-
+body {
+  background-image: url("../assets/images/rivendell.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  color: white;
+  font-family: fantasy;
 }
+
+.interface-box {
+  background-color: rgb(75, 75, 75, .5);
+  margin: 5%;
+  padding: 3%;
+  border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(231, 182, 59);
+}
+
 #Aragorn {
   display: none;
 }
@@ -73,3 +91,4 @@
 #Thranduil {
   display:none;
 }
+
