@@ -1,6 +1,6 @@
 # _Lord of the Rings._
 
-#### By _**Kim Brannian**_
+#### By _**Kim Brannian, Liz Thomas, and Chase Stokes**_
 
 #### _A website for fans of lotr.._
 
